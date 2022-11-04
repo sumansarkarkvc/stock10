@@ -1,0 +1,17 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: stock
+  datasource:
+    password: suman-10
+    url: jdbc:mysql://stock-10.mysql.database.azure.com:3306/stock?useSSL=true&requireSSL=false
+    username: stock@stock-10
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
